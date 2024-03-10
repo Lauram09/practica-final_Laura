@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="laura">
+    <title>Formularios</title>
+    <link href="css_1/formularios1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <h2 class="titulo">ENQUESTA PROFESSORAT</h2>
+    <br>
+    <form method="POST" action="enviado.html">
+        <fieldset class="borde">
+            <fieldset class="dades">
+                <legend><u>DADES PERSONALS</u></legend>
+                <label for="Opcion2">Edat *</label>
+                <br>
+                <input type="number" id="Opcion2" name="grupo1" placeholder="Inseriu l'edat" required>
+                <br>
+                <br>
+                <label for="Opcion3">Email*</label>
+                <br>
+                <input type="email" id="Opcion3" name="grupo1" required>
+                <br>
+                <br>
+                <label for="Opcion4">Contrassenya*</label>
+                <br>
+                <input type="text" id="Opcion4" name="grupo1" placeholder="Inseriu la contrasenya" required>
+                <br>
+                <br>
+                <label for="Opcion5">Data de naixament*</label>
+                <br>
+                <input type="date" id="Opcion5" name="grupo1" required>
+                <br>
+                <p>*Camps obligatoris</p>
+            </fieldset>
+            <br>
+            <fieldset class="moduls">
+                <legend><u>MODULS A EVALUAR</u></legend>
+                <label for="lang"></label>
+                <select name="lenguajes" id="lang">
+                    <option value="" hidden>Seleccionar</option>
+                    <option value="php">PHP</option>
+                    <option value="java">Java</option>
+                    <option value="golang">Golang</option>
+                    <option value="python">Python</option>
+                    <option value="c#">C#</option>
+                    <option value="C++">C++</option>
+                    <option value="erlang">Erlang</option>
+                </select>
+            </fieldset>
+            <fieldset class="cicle">
+                <legend><u>CICLE</u></legend>
+                <input type="radio" id="Opcion6" name="grupo1" value="1">
+                <label for="Opcion6">ASIX</label>
+                <input type="radio" id="Opcion7" name="grupo1" value="1">
+                <label for="Opcion7">DAM</label>
+                <input type="radio" id="Opcion8" name="grupo1" value="1">
+                <label for="Opcion8">DAW</label>
+                <input type="radio" id="Opcion9" name="grupo1" value="1">
+                <label for="Opcion9">BIOIMFORMÀTICA</label>
+            </fieldset>
+            <fieldset class="profesor">
+                <legend><u>PROFESSOR A EVALUAR</u></legend>
+                <label for="Opcion10">Nom Professor</label>
+                <br>
+                <input type="text" id="Opcion10" name="grupo1" placeholder="Inseriu el nom">
+                <br>
+                <br>
+                <label for="Opcion11">Grau de satisfacció del 0 al 10</label>
+                <br>
+                <input type="range" id="Opcion11" name="grupo1">
+                <br>
+                <label for="Opcion11">Comentaris</label>
+                <br>
+                <textarea name="message" rows="10" cols="70">
+                    Inseriu els comentaris
+                 </textarea>
+            </fieldset>
+            <fieldset class="sobretu">
+                <legend><u>EXPLICA ALGUNA COSA SOBRE TU</u></legend>
+                <label for="Opcion49">Ets repetidor?</label>
+                <br>
+                <input type="radio" id="Opcion49" name="grupo1">
+                <label for="checkbox13">Si</label>
+                <input type="radio" id="checkbox13" name="grupo1">
+                <label for="checkbox13">No</label>
+                <br>
+                <br>
+                <label for="Opcion14">Color preferit</label>
+                <br>
+                <input type="color" id="Opcion14" name="grupo1">
+                <br>
+                <br>
+                <label for="Opcion15">Dirección Web</label>
+                <br>
+                <input type="url" id="Opcion15" name="grupo2">
+                <br>
+                <br>
+                <label for="browser">Situació actual</label>
+                <br>
+                <input list="browsers" name="browser" id="browser">
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+                <br>
+                <label for="Opcion17"></label>
+                <br>
+                <input type="file" id="Opcion17" name="grupo1" accept="image/png, image/jpeg">
+            </fieldset>
+            <fieldset class="hora">
+                <legend><u>HORA ENQUESTA</u></legend>
+                <label for="Opcion18">Hora</label>
+                <input type="time" id="Opcion18" name="group1">
+            </fieldset>
+            <br>
+            <fieldset class="envio">
+                <input type="submit" value="enviar" onclick="self1()">
+                <input type="reset" value="Reiniciar">
+                <input type="button" value="Surt" onclick="self.close()">
+            </fieldset>
+            <script>
+                function self1() { alert("formulario enviado") }
+            </script>
+        </fieldset>
+    </form>
+</body>
+
+</html>

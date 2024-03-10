@@ -1,0 +1,59 @@
+h1{
+    text-align: center;
+}
+.titu{
+    color:black;
+    width: 50%;
+    border-collapse: collapse;
+    margin: auto;
+}
+h2{
+    text-align: center;
+    color: red;
+}
+.dades{
+    background-color:#8ce4f0;
+}
+.moduls{
+    background-color: rgb(248, 153, 169);
+}
+.cicle{
+    background-color: #f1e881;
+}
+.profesor{
+    background-color: #59da82;
+}
+.borde{
+    border-color: pink;
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+}
+.sobretu{
+    background-color: rgb(221, 101, 101);
+}
+.hora{
+    background-color:rgba(238, 64, 64, 0.911);
+}
+.envio{
+    background-color: black;
+    text-align: center;
+}
+.titulo{
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+}
+.imagen{
+    display: block;
+    text-align: center;
+    border-collapse: collapse;
+    width: 30%;
+    margin: auto;
+}
+.gracias{
+    text-align: center;
+}
+.fondo{
+    background-color:wheat ;
+}

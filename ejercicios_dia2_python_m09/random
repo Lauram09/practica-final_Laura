@@ -1,0 +1,25 @@
+import random
+
+
+
+empieza = int(input("Introduzca el número minimo del intervalo: "))
+acaba = int(input("Introduzca el número maximo del intervalo: "))
+
+numero = random.randint(empieza, acaba)
+
+intentos = 0
+adivinanza = None
+
+while adivinanza != numero:
+      
+        adivinanza = int(input("Adivina el número: "))
+        intentos += 1
+
+        if adivinanza < numero:
+            print("El número es mayor")
+        elif adivinanza > numero:
+            print("El número es menor")
+    
+
+print(f"has adivinado{numero} en {intentos} intentos")
+
